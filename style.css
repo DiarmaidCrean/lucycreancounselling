@@ -1936,12 +1936,18 @@ p {
 	}
 
 	#content .img-holder {
-		width: 32.4%;
-		margin: 6px 1.4% 10px 0;
+		float: right;
+		width: 40%;
+		margin: 6px 0 15px 15px;
 	}
 
 	#content .text-holder {
 		padding: 3px 0 0;
+		overflow: visible;
+	}
+
+	body:not(.home) #content .text-holder ul {
+		clear: right;
 	}
 
 	#content .btn {
@@ -2377,12 +2383,17 @@ p {
 	}
 
 	#content .img-holder {
-		width: 20.1%;
-		margin: 6px 2.7% 10px 0;
+		float: right;
+		width: 38%;
+		margin: 6px 0 12px 12px;
 	}
 
 	#content .text-holder {
 		overflow: visible;
+	}
+
+	body:not(.home) #content .text-holder ul {
+		clear: right;
 	}
 
 	#content .btn {
