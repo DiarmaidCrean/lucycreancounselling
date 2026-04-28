@@ -1988,6 +1988,7 @@ p {
 		line-height: 26px;
 		letter-spacing: 0.5px;
 		margin: 0 0 11px;
+		text-align: center;
 	}
 
 	.two-columns {
@@ -2448,6 +2449,7 @@ p {
 		line-height: 23px;
 		letter-spacing: 0;
 		margin: 0 0 7px;
+		text-align: center;
 	}
 
 	.two-columns {
