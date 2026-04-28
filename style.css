@@ -2740,3 +2740,16 @@ p {
 	}
 }
 
+/* About page: photo 20% larger on mobile */
+@media (max-width: 767px) {
+	.page-about #content .img-holder {
+		width: 48%;
+	}
+}
+
+@media (max-width: 479px) {
+	.page-about #content .img-holder {
+		width: 46%;
+	}
+}
+
