@@ -1670,7 +1670,7 @@ p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url(images/footer-mask.png) no-repeat;
+	background: url(/assets/images/footer-mask.png) no-repeat;
 	height: 129px;
 	background-size: 100% 100%;
 }
