@@ -1988,7 +1988,6 @@ p {
 		line-height: 26px;
 		letter-spacing: 0.5px;
 		margin: 0 0 11px;
-		text-align: center;
 	}
 
 	.two-columns {
@@ -2449,7 +2448,6 @@ p {
 		line-height: 23px;
 		letter-spacing: 0;
 		margin: 0 0 7px;
-		text-align: center;
 	}
 
 	.two-columns {
@@ -2692,5 +2690,42 @@ p {
 	}
 	
 	
+}
+
+/* Home page: collapse empty image holder so heading gets full width and centres cleanly */
+@media (max-width: 767px) {
+	.home #content .img-holder {
+		display: none;
+	}
+
+	.home #content .text-holder {
+		overflow: visible;
+		width: 100%;
+	}
+
+	.home #content h1 {
+		text-align: center;
+		font-size: 19px;
+		line-height: 26px;
+		letter-spacing: 0;
+	}
+}
+
+@media (max-width: 479px) {
+	.home #content .img-holder {
+		display: none;
+	}
+
+	.home #content .text-holder {
+		overflow: visible;
+		width: 100%;
+	}
+
+	.home #content h1 {
+		text-align: center;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: 0;
+	}
 }
 
