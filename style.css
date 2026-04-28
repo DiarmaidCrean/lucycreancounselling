@@ -2740,16 +2740,24 @@ p {
 	}
 }
 
-/* About page: photo 20% larger on mobile */
+/* About page: photo larger and text offset on mobile */
 @media (max-width: 767px) {
 	.page-about #content .img-holder {
 		width: 58%;
+	}
+
+	.page-about #content .text-holder {
+		padding-top: 60px;
 	}
 }
 
 @media (max-width: 479px) {
 	.page-about #content .img-holder {
 		width: 55%;
+	}
+
+	.page-about #content .text-holder {
+		padding-top: 60px;
 	}
 }
 
