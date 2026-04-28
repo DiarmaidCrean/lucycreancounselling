@@ -1984,9 +1984,9 @@ p {
 	}
 
 	.home h1 {
-		font-size: 18px;
-		line-height: 21px;
-		letter-spacing: 2px;
+		font-size: 20px;
+		line-height: 26px;
+		letter-spacing: 0.5px;
 		margin: 0 0 11px;
 	}
 
@@ -2010,8 +2010,8 @@ p {
 
 	h1 {
 		font-size: 20px;
-		line-height: 23px;
-		letter-spacing: 2px;
+		line-height: 26px;
+		letter-spacing: 0.5px;
 		margin: 0 0 5px;
 	}
 
@@ -2444,8 +2444,9 @@ p {
 	}
 
 	.home h1 {
-		font-size: 15px;
-		line-height: 18px;
+		font-size: 17px;
+		line-height: 23px;
+		letter-spacing: 0;
 		margin: 0 0 7px;
 	}
 
@@ -2471,8 +2472,9 @@ p {
 	}
 
 	h1 {
-		font-size: 15px;
-		line-height: 18px;
+		font-size: 17px;
+		line-height: 23px;
+		letter-spacing: 0;
 		margin: 0 0 10px;
 	}
 
