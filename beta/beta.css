@@ -136,10 +136,17 @@
 }
 
 @media (max-width: 767px) {
+    .hero-cta {
+        padding: 16px 20px;
+    }
+
     .hero-photo-mobile {
         display: block;
         width: 100%;
-        height: auto;
+        max-height: 380px;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: top;
     }
 
     #about .img-holder {
