@@ -115,7 +115,11 @@
 .hero-cta {
     background: #ffffff;
     text-align: center;
-    padding: 32px 20px;
+    padding: 24px 20px;
+}
+
+.hero-cta .btn {
+    margin-bottom: 20px;
 }
 
 /* About section photo: square, no rounding on desktop */
@@ -134,8 +138,8 @@
 @media (max-width: 767px) {
     .hero-photo-mobile {
         display: block;
-        max-height: 340px;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
 
     #about .img-holder {
