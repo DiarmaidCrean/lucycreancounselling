@@ -54,3 +54,64 @@
 .nav-cta:after {
     display: none;
 }
+
+/* 6. Contact form layout */
+.contact-form .container {
+    max-width: 680px;
+}
+
+.contact-form .form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-form .form-row .form-group {
+    flex: 1;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    border-radius: 6px;
+    border: 1px solid #afd5b1;
+    padding: 12px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+    outline: none;
+    border-color: #37877f;
+    box-shadow: 0 0 0 3px rgba(175, 213, 177, 0.3);
+}
+
+.contact-form .form-submit {
+    text-align: right;
+}
+
+.contact-form .contact-details {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 767px) {
+    .contact-form .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
