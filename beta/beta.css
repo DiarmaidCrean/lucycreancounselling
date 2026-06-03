@@ -134,6 +134,8 @@
 @media (max-width: 767px) {
     .hero-photo-mobile {
         display: block;
+        max-height: 340px;
+        object-fit: cover;
     }
 
     #about .img-holder {
