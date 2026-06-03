@@ -115,3 +115,21 @@
         gap: 0;
     }
 }
+
+/* Mobile: show photo in hero, hide in About */
+.hero-photo-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+    .hero-photo-mobile {
+        display: block;
+    }
+
+    #about .img-holder {
+        display: none;
+    }
+}
