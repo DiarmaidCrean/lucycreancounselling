@@ -50,12 +50,7 @@
     box-shadow: 0 0 0 3px rgba(175, 213, 177, 0.3);
 }
 
-/* 5. Remove arrow icon from nav CTA button */
-.nav-cta:after {
-    display: none;
-}
-
-/* 6. Contact form layout */
+/* 5. Contact form layout */
 .contact-form .container {
     max-width: 680px;
 }
@@ -114,6 +109,11 @@
         flex-direction: column;
         gap: 0;
     }
+}
+
+/* About section photo: square, no rounding on desktop */
+#about .img-holder img {
+    border-radius: 0;
 }
 
 /* Mobile: show photo in hero, hide in About */
