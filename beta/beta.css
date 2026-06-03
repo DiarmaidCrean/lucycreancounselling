@@ -1,0 +1,56 @@
+/* Beta overrides -- does not affect live site */
+
+/* 1. Mobile font size */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* 2. Contact form -- white background */
+.contact-form {
+    background: #ffffff;
+    border-top: 3px solid #afd5b1;
+}
+
+.contact-form h3 {
+    color: #afd5b1;
+}
+
+.contact-form p {
+    color: #333;
+}
+
+/* 3. Form field labels */
+.contact-form label {
+    display: block;
+    margin: 0 0 6px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+/* 4. Form fields -- rounded borders */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    border-radius: 6px;
+    border: 1px solid #afd5b1;
+    margin: 0 0 20px;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #37877f;
+    box-shadow: 0 0 0 3px rgba(175, 213, 177, 0.3);
+}
+
+/* 5. Remove arrow icon from nav CTA button */
+.nav-cta:after {
+    display: none;
+}

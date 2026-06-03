@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="beta.css">
 	<style>
 		html { scroll-behavior: smooth; }
 	</style>
@@ -25,10 +26,11 @@
 						<ul id="nav" class="menu">
 							<li class="menu-item"><a href="#about">About</a></li>
 							<li class="menu-item"><a href="#fees">Booking &amp; fees</a></li>
-							<li class="menu-item"><a href="#contact">Get in touch</a></li>
-						</ul>
-					</div>
-				</nav>
+						<li class="menu-item"><a href="#contact">Get in touch</a></li>
+					</ul>
+					<a href="#contact" class="btn btn-green nav-cta" style="margin-left: 24px; font-size: 14px; padding: 5px 16px; white-space: nowrap;">Book a free 30-minute call</a>
+				</div>
+			</nav>
 			</div>
 		</header>
 		<main role="main" id="main">
@@ -51,10 +53,12 @@
 			<!-- 2. Intro -->
 			<div id="home">
 				<div class="container">
-					<div id="content">
-						<div class="img-holder"></div>
-						<div class="text-holder">
-							<h1>Safe and professional counselling in Hove</h1>
+				<div id="content">
+					<div class="img-holder">
+						<img src="../assets/images/Lucy-Crean.jpg" alt="Lucy Crean" style="border-radius: 50%; max-width: 280px; display: block; margin: 0 auto;">
+					</div>
+					<div class="text-holder">
+						<h1>Safe and professional counselling in Hove</h1>
 							<p>Whatever difficulties in your life have brought you to this website, I understand that sometimes life can be tough, and at such times it can be hard to work things out alone.</p>
 							<p>It may feel that life has taken a direction you are not happy with, or maybe you have some tough choices to make. Perhaps you can't quite put your finger on why you feel unhappy or dissatisfied, but you know that something's not right. Your situation may be familiar to you and you may be aware of a pattern, or it may be sudden and frightening.</p>
 							<p>Whatever your own personal reasons for seeking counselling, it can be a hugely courageous step to make.</p>
@@ -66,34 +70,7 @@
 					</div>
 				</div>
 
-				<div class="links-block">
-					<div class="container">
-						<ul class="links-list">
-							<li>
-								<div class="ico"><img src="../assets/icons/ico-about.svg" alt=""></div>
-								<div class="info-holder">
-									<strong class="title">about me</strong>
-									<a href="#about" class="btn btn-white">here to help</a>
-								</div>
-							</li>
-							<li>
-								<div class="ico"><img src="../assets/icons/ico-booking.svg" alt=""></div>
-								<div class="info-holder">
-									<strong class="title">booking &amp; fees</strong>
-									<a href="#fees" class="btn btn-white">read more</a>
-								</div>
-							</li>
-							<li>
-								<div class="ico"><img src="../assets/icons/ico-contact.svg" alt=""></div>
-								<div class="info-holder">
-									<strong class="title">contact</strong>
-									<a href="#contact" class="btn btn-white">get in touch</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		</div>
 
 			<!-- 3. About -->
 			<div id="about">
@@ -157,9 +134,7 @@
 							<p>I practice out of two Hove locations:<br>
 							at <a href="http://thewilburyclinic.co.uk/" target="_blank" rel="noopener">The Wilbury Clinic</a> and <a href="http://www.hovetherapyrooms.co.uk/" target="_blank" rel="noopener">Hove Therapy Rooms</a>. Both are in Hove.</p>
 							<h3>Booking a session</h3>
-							<p>If you&#8217;re interested in booking a session please just get in touch by email or telephone.</p>
-							<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; Email: <a href="mailto:lucy@lucycreancounselling.co.uk">lucy@lucycreancounselling.co.uk</a></p>
-							<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Phone: <a href="tel:07947862832">07947 862832</a></p>
+						<p>If you&#8217;re interested in booking a session, <a href="#contact">use the form below</a> and I&#8217;ll get back to you.</p>
 							<p><a class="btn btn-green" href="#contact">Contact me</a></p>
 						</div>
 					</div>
@@ -171,12 +146,15 @@
 				<div class="contact-form">
 					<div class="container">
 						<h3>Get in touch</h3>
-						<p>Please get in touch by email or use the form below.</p>
+						<p>I offer a free 30-minute introductory call so you can ask questions and get a feel for how I work, with no obligation. Or if you&#8217;re ready to get started, your first in-person session is £20. Fill in the form below and I&#8217;ll be in touch.</p>
 						<form action="https://formspree.io/f/xkoawezq" method="POST">
 							<input type="hidden" name="_subject" value="New enquiry from Lucy Crean Counselling">
-							<input type="text" name="name" placeholder="Your name" required>
-							<input type="email" name="email" placeholder="Your email" required>
-							<textarea name="message" placeholder="Your message"></textarea>
+						<label for="name">Your name</label>
+						<input type="text" id="name" name="name" placeholder="Your name" required>
+						<label for="email">Your email</label>
+						<input type="email" id="email" name="email" placeholder="Your email" required>
+						<label for="message">Your message</label>
+						<textarea id="message" name="message" placeholder="Your message"></textarea>
 							<button type="submit" class="btn btn-white">Send message</button>
 						</form>
 						<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; <a href="mailto:lucy@lucycreancounselling.co.uk">lucy@lucycreancounselling.co.uk</a></p>
