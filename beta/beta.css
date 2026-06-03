@@ -111,6 +111,13 @@
     }
 }
 
+/* Hero CTA block below slideshow */
+.hero-cta {
+    background: #ffffff;
+    text-align: center;
+    padding: 32px 20px;
+}
+
 /* About section photo: square, no rounding on desktop */
 #about .img-holder img {
     border-radius: 0;
