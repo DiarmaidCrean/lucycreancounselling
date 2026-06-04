@@ -14,6 +14,27 @@
 	<link rel="stylesheet" href="beta.css">
 	<style>
 		html { scroll-behavior: smooth; }
+
+		/* Hide About photo on mobile -- intro photo remains visible */
+		@media (max-width: 767px) {
+			#about .img-holder {
+				display: none;
+			}
+		}
+
+		/* Right-align all buttons and CTAs */
+		.hero-cta,
+		.contact-form .form-submit,
+		.content-block .text-holder p:has(.btn) {
+			text-align: right;
+		}
+
+		.hero-cta .btn,
+		.contact-form .form-submit .btn,
+		.content-block .text-holder .btn {
+			display: inline-block;
+			width: auto;
+		}
 	</style>
 </head>
 <body class="home">
