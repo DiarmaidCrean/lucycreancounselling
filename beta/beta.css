@@ -213,7 +213,7 @@
     }
 
     #about .img-holder {
-        height: 420px;
+        height: 480px;
         overflow: hidden;
     }
 
@@ -221,6 +221,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center bottom;
+        object-position: center 20%;
     }
 }
