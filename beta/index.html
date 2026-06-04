@@ -79,12 +79,15 @@
 				<div class="container">
 					<div id="content">
 						<div class="img-holder">
-							<img width="1067" height="1600" src="../assets/images/Lucy-Crean.jpg" alt="Lucy Crean"
-								srcset="../assets/images/Lucy-Crean.jpg 1067w,
-								        ../assets/images/Lucy-Crean-200x300.jpg 200w,
-								        ../assets/images/Lucy-Crean-768x1152.jpg 768w,
-								        ../assets/images/Lucy-Crean-683x1024.jpg 683w"
-								sizes="(max-width: 1067px) 100vw, 1067px">
+							<picture>
+								<source media="(max-width: 767px)" srcset="../assets/images/Lucy-Crean-mobile.jpg">
+								<img width="1067" height="1600" src="../assets/images/Lucy-Crean.jpg" alt="Lucy Crean"
+									srcset="../assets/images/Lucy-Crean.jpg 1067w,
+									        ../assets/images/Lucy-Crean-200x300.jpg 200w,
+									        ../assets/images/Lucy-Crean-768x1152.jpg 768w,
+									        ../assets/images/Lucy-Crean-683x1024.jpg 683w"
+									sizes="(max-width: 1067px) 100vw, 1067px">
+							</picture>
 						</div>
 						<div class="text-holder">
 						<h1>About Me</h1>
