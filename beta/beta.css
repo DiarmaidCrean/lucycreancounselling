@@ -1,5 +1,45 @@
 /* Beta overrides -- does not affect live site */
 
+/* content-block: mirrors #content two-column layout for multi-section use */
+.content-block .img-holder {
+    float: left;
+    margin: 6px 5.3% 0 0;
+    max-width: 384px;
+}
+
+.content-block .text-holder {
+    overflow: hidden;
+}
+
+.content-block a:hover {
+    text-decoration: underline;
+}
+
+.content-block .btn {
+    margin: 13px 0 0;
+}
+
+@media (max-width: 1023px) {
+    .content-block {
+        padding: 0 16px 47px;
+    }
+
+    .content-block .img-holder {
+        float: right;
+        width: 40%;
+        margin: 6px 0 15px 15px;
+    }
+
+    .content-block .text-holder {
+        padding: 3px 0 0;
+        overflow: visible;
+    }
+
+    .content-block .btn {
+        margin: 8px 0 0;
+    }
+}
+
 /* 1. Mobile font size */
 @media (max-width: 767px) {
     body {
@@ -51,10 +91,6 @@
 }
 
 /* 5. Contact form layout */
-.contact-form .container {
-    max-width: 680px;
-}
-
 .contact-form .form-row {
     display: flex;
     gap: 16px;
@@ -186,7 +222,7 @@
 }
 
 /* About section photo: square, no rounding on desktop */
-#about .img-holder img {
+#about .content-block .img-holder img {
     border-radius: 0;
 }
 
