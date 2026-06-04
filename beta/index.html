@@ -120,6 +120,87 @@
 				</div>
 			</div>
 
+			<div class="container">
+				<div class="accordion-section">
+					<h2 class="accordion-heading">Areas I can help with</h2>
+					<div class="accordion">
+
+						<div class="accordion-item is-open">
+							<button class="accordion-trigger" aria-expanded="true">
+								<span>Anxiety</span>
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</button>
+							<div class="accordion-body">
+								<p>Anxiety can take many forms: a constant sense of worry, physical tension, or a feeling that something bad is about to happen. It can make everyday life feel exhausting and hard to manage. In our sessions, we can explore what is driving your anxiety, understand the patterns that keep it in place, and find ways to help you feel steadier and more in control.</p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-trigger" aria-expanded="false">
+								<span>Postnatal issues</span>
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</button>
+							<div class="accordion-body">
+								<p>The period after having a baby can be one of the most challenging times in a person's life, even when things look fine from the outside. You may be feeling overwhelmed, disconnected, or not quite yourself. Counselling can offer a safe and non-judgemental space to talk honestly about your experience, and to begin finding your way through.</p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-trigger" aria-expanded="false">
+								<span>Relationship problems</span>
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</button>
+							<div class="accordion-body">
+								<p>Difficulties in relationships, whether with a partner, family member, or friend, can leave you feeling hurt, confused, or stuck. Counselling can help you explore the patterns and feelings that affect how you relate to others, and work towards greater understanding and more fulfilling connections.</p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-trigger" aria-expanded="false">
+								<span>Low self esteem</span>
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</button>
+							<div class="accordion-body">
+								<p>If you find yourself doubting your worth, being overly self-critical, or feeling that you are somehow not enough, counselling can help. Together we can explore where these feelings come from and begin to develop a kinder, more compassionate relationship with yourself.</p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-trigger" aria-expanded="false">
+								<span>Depression</span>
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</button>
+							<div class="accordion-body">
+								<p>Depression can make even small tasks feel impossible, and it can be hard to explain to others why you feel the way you do. You do not have to face it alone. In our sessions we can work together to understand what lies beneath your low mood and begin to find a way forward.</p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-trigger" aria-expanded="false">
+								<span>Bereavement</span>
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</button>
+							<div class="accordion-body">
+								<p>Grief is one of the most profound experiences we go through, and everyone experiences it differently. Whether your loss is recent or something you have been carrying for a long time, counselling can offer a space to express what you are feeling without judgement, and to find your own way through.</p>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-trigger" aria-expanded="false">
+								<span>Menopause</span>
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</button>
+							<div class="accordion-body">
+								<p>The menopause can bring significant physical and emotional changes that affect how you feel about yourself and your life. You may be experiencing mood swings, anxiety, a loss of confidence, or a sense that you no longer recognise yourself. Counselling can offer a space to make sense of what you are going through and find ways to navigate this transition with greater ease and self-compassion.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			</div>
+
 			<!-- 4. Fees -->
 			<div id="fees">
 				<div class="container">
@@ -201,5 +282,17 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="../jquery.main.js"></script>
+	<script>
+		$(function () {
+			$('.accordion-trigger').on('click', function () {
+				var $item = $(this).closest('.accordion-item');
+				var isOpen = $item.hasClass('is-open');
+				$('.accordion-item').removeClass('is-open').find('.accordion-trigger').attr('aria-expanded', 'false');
+				if (!isOpen) {
+					$item.addClass('is-open').find('.accordion-trigger').attr('aria-expanded', 'true');
+				}
+			});
+		});
+	</script>
 </body>
 </html>
