@@ -15,13 +15,19 @@
 	<style>
 		html { scroll-behavior: smooth; }
 
-		/* index2 only: right-align buttons */
-		.hero-cta {
+		/* index2 only: right-align all buttons and CTAs */
+		.hero-cta,
+		.contact-form .form-submit,
+		.content-block .text-holder p:has(.btn),
+		#footer .visual {
 			text-align: right;
 		}
 
-		.content-block .text-holder p:has(.btn) {
-			text-align: right;
+		.hero-cta .btn,
+		.contact-form .form-submit .btn,
+		.content-block .text-holder .btn {
+			display: inline-block;
+			width: auto;
 		}
 	</style>
 </head>
