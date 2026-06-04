@@ -15,6 +15,26 @@
 	<style>
 		html { scroll-behavior: smooth; }
 
+		/* Hero photo: mobile only */
+		.hero-cta picture {
+			display: none;
+		}
+		@media (max-width: 767px) {
+			.hero-cta picture {
+				display: block;
+			}
+		}
+
+		/* About photo: desktop only */
+		#about .img-holder {
+			display: none;
+		}
+		@media (min-width: 768px) {
+			#about .img-holder {
+				display: block;
+			}
+		}
+
 		/* index2 only: right-align all buttons and CTAs */
 		.hero-cta,
 		.contact-form .form-submit,
@@ -95,9 +115,14 @@
 			<div id="about">
 				<div class="container">
 					<div class="content-block">
-					<div class="img-holder"></div>
-						<div class="text-holder">
-							<h1>About Me</h1>
+				<div class="img-holder">
+					<picture>
+						<source media="(max-width: 767px)" srcset="../assets/images/Lucy-Crean-mobile.jpg">
+						<img src="../assets/images/Lucy-Crean.jpg" alt="Lucy Crean">
+					</picture>
+				</div>
+					<div class="text-holder">
+						<h1>About Me</h1>
 							<p>I am a BACP Accredited counsellor, very experienced in helping people overcome a range of personal issues. Whatever your personal and unique struggle, I am ready to listen and talk about it with you. Feel free to contact me and we can chat about creating a plan that's right for you.</p>
 							<p>I have lots of experience in helping mothers who have recently had children and are struggling with the challenges of parenthood. I lead therapeutic support groups for new mums on behalf of a local counselling charity.</p>
 
