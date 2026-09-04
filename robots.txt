@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /wp-content/plugins/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /feed/
+Disallow: /comments/
+
+Sitemap: https://www.lucycreancounselling.co.uk/sitemap.xml
