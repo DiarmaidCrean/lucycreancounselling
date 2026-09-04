@@ -219,7 +219,7 @@ p:last-child { margin-bottom: 0; }
   text-align: center;
   background-image: url('https://static.wixstatic.com/media/dfe705d7a08446ba86261aa099eeee5c.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 .hero::before {
@@ -443,6 +443,16 @@ p:last-child { margin-bottom: 0; }
   }
 
   .hero { padding: 90px 20px 80px; }
+
+  /* Photo above text in Welcome on mobile */
+  .welcome-two-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome-photo-col { order: -1; }
+
+  /* Reduce top whitespace on conditions heading */
+  .conditions { padding-top: 36px; }
 }
 
 @media (max-width: 600px) {
